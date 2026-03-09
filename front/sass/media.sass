@@ -155,6 +155,7 @@
           font-size: 14px
           line-height: 25px
       &__bonus
+        z-index: 2
         height: fit-content
         width: 262px
         flex-direction: column
@@ -200,6 +201,26 @@
           &:nth-child(4)
             right: 18%
             top: 47%
+      &__decor
+        width: 600px
+        &-item
+          &.coin
+            top: 75px
+            left: 105px
+            width: 105px
+          &.coin-blue
+            top: 40px
+            left: 90px
+          &.coinBig
+            display: none
+          &.coin-r
+            width: 100px
+            right: 85px
+            top: 12px
+          &.slot
+            top: 60px
+            width: 160px
+            right: 54px
     .levels
       padding-left: 0
     .bonus
@@ -235,3 +256,8 @@
         top: 332px
         &.games
           top: 500px
+
+  @media screen and (max-width: 340px)
+    .welcome
+      &__decor
+        width: 550px
